@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header,
+.about div,
+.contact .social,
+footer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    height: 50px;
+    padding: 15px 0;
+    position: relative;
+}
+
+.header .logo {
+    display: inline-block;
+    color: red;
+    font-style: italic;
+}
+
+.header ul {
+    display: inline-block;
+    position: absolute;
+    left: 45%;
+}
+
+.header ul li {
+    display: inline;
+    margin-left: 10px;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.header ul li .active,
+.section1 h2 span,
+.about h2,
+.contact h2 {
+    color: brown;
+}
+
+.section1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://media.istockphoto.com/id/521011652/photo/night-scene-milky-way-background.jpg?s=1024x1024&w=is&k=20&c=jybakBOFousuK2PCwHra7wAopgwcOu84F7HbeGHeCsI=");
+    background-size: cover;
+    padding-left: 20px;
+    cursor: pointer;
+
+}
+
+.section1 h2 {
+    color: white;
+    font-style: italic;
+    padding: 200px 100px 0;
+    width: 500px;
+}
+
+.section1 p {
+    padding-top: 40px;
+    margin-left: 120px;
+    width: 50%;
+    color: white;
+}
+
+.about h2 {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.about h2,
+.about p {
+    text-align: center;
+}
+
+.about p {
+    margin-bottom: 10px;
+}
+
+.about div {
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.about div:first-of-type {
+    background: linear-gradient(#eee, brown);
+    border-radius: 10px;
+}
+
+.about div:nth-of-type(2) {
+    background: linear-gradient(to right, brown, #eee, brown);
+    border-radius: 10px 0;
+}
+
+.about div:last-of-type {
+    background: conic-gradient(#eee, brown);
+    border-radius: 0 10px;
+}
+
+.contact {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact .social div {
+    margin-top: 20px;
+    display: inline-block;
+    width: calc((100% / 3) - 6px);
+    height:200px;
+    border: 1px solid #eee;
+    text-align: center;
+}
+
+.contact .social div img{
+    width: 100% ;
+    height:200px;
+   object-fit:contain;
+   
+}
+
+.contact .social div:first-of-type {
+    filter:grayscale(100%);
+}
+
+.contact .social div:last-of-type {
+    filter:grayscale(50%);
+}
+
+footer{
+    height: 30px;
+    margin-top: 30px;
+    padding-top: 5px;
+    background-color: #333;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
