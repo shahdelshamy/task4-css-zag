@@ -6,6 +6,11 @@
 
 }
 
+:root {
+    --brown-color: brown;
+    --red-color: red;
+}
+
 .page {
     overflow: hidden;
 }
@@ -47,14 +52,16 @@ footer {
 
 .header ul li .active,
 .header .logo {
-    color: red;
+    color: var(--red-color);
+
 }
 
 
 .section1 h2 span,
 .about h2,
-.contact h2 {
-    color: brown;
+.contact h2,
+footer span {
+    color: var(--brown-color);
 }
 
 .section1 {
@@ -62,6 +69,7 @@ footer {
     height: 100vh;
     background-image: url("https://media.istockphoto.com/id/521011652/photo/night-scene-milky-way-background.jpg?s=1024x1024&w=is&k=20&c=jybakBOFousuK2PCwHra7wAopgwcOu84F7HbeGHeCsI=");
     background-size: cover;
+    background-attachment: fixed;
     padding-left: 20px;
     cursor: pointer;
 
@@ -138,6 +146,7 @@ footer {
 
 .contact .social div:first-of-type {
     filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
 }
 
 .contact .social div:last-of-type {
